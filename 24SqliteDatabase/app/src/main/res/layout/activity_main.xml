@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#47535E">
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:hint="ID"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_id"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:hint="Name"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/editText_cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_name"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:hint="Course Count"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_cc"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:hint="Email"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_email"
+        android:background="#3498DB"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="ADD DATA"
+        android:textColor="#fff"
+
+        />
+
+    <Button
+        android:id="@+id/button_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add"
+        android:background="#10a881"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="VIEW DATA"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_View"
+        android:background="#f3b431"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="UPDATE DATA"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_update"
+        android:background="#e44236"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="DELETE DATA"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_DeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_ViewAll"
+        android:background="@drawable/button_design"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="DELETE ALL DATA"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button_ViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_delete"
+        android:background="@drawable/button_design"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="VIEW ALL DATA"
+        android:textColor="#fff" />
+
+</RelativeLayout>
